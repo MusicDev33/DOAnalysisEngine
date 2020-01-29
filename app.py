@@ -3,8 +3,6 @@ app = Flask(__name__)
 
 todoItems = []
 
-# test
-
 @app.route("/add/<item>")
 def addItem(item):
     todoItems.append(item)
